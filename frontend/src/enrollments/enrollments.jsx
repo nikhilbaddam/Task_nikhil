@@ -26,7 +26,7 @@ const EnrollmentsBarChart = () => {
     // Fetch Children enrollments
     const fetchChildrenEnrollments = async () => {
       try {
-        const response = await fetch('http://localhost:5000/children/enrollments');
+        const response = await fetch('https://task-nikhil.onrender.com/children/enrollments');
         const data = await response.json();
         setChildrenEnrollments(getMonthlyEnrollments(data));
       } catch (error) {
@@ -37,7 +37,7 @@ const EnrollmentsBarChart = () => {
     // Fetch Caregivers enrollments
     const fetchCaregiversEnrollments = async () => {
       try {
-        const response = await fetch('http://localhost:5000/caregiver/enrollments');
+        const response = await fetch('https://task-nikhil.onrender.com/caregiver/enrollments');
         const data = await response.json();
         setCaregiversEnrollments(getMonthlyEnrollments(data));
       } catch (error) {

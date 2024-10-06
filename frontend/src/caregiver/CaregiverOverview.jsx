@@ -7,7 +7,7 @@ const CaregiverOverview = () => {
   useEffect(() => {
     const fetchOverview = async () => {
       try {
-        const response = await fetch('http://localhost:5000/caregiver/caregiverOverview');
+        const response = await fetch('https://task-nikhil.onrender.com/caregiver/caregiverOverview');
         const data = await response.json();
         setOverviewData(data);
       } catch (error) {

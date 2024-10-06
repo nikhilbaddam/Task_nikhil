@@ -1,0 +1,86 @@
+.finance-details-container {
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .finance-details-container p{
+    border-bottom: 1px solid gray;
+   padding-bottom: 5px;
+   font-weight: 900;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  
+  .finance-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .finance-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(45% - 20px); /* Two cards per row, account for gap */
+    text-align: left;
+    height: 90px;
+    border: 1px solid rgba(128, 128, 128, 0.278);
+    text-align: center;
+    
+  }
+  
+  .finance-card h3 {
+    /* Add styles for heading */
+    width: fit-content;
+    background-color: rgba(138, 150, 161, 0.081);
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+font-weight: 900;
+font-family:'Times New Roman', Times, serif;
+   border-radius: 10px;
+   margin-left: 10px;
+  }
+
+  .finance-card h3::before{
+    content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #00C49F; /* Different color for income */
+  border-radius: 50%;
+  margin-right: 4px;
+  }
+
+  
+  .finance-card p {
+    /* Add styles for paragraph */
+ transform: translate(0px,-12px);
+    font-weight: 900;
+   font-size: 20px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+border: none;
+  }
+
+  #finance_p{
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    background-color: #b3aeae37;
+    width: fit-content;
+    align-self: center;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* For smaller screens, display one card per row */
+  @media (max-width: 768px) {
+    .finance-card {
+      width: 100%;
+    }
+  }
+  

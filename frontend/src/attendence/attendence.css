@@ -1,0 +1,16 @@
+.chartAttendence{
+    width: 100%;
+   
+}
+.counts-container-attendence{
+    transform: translate(0px,-10px);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.total{
+    display: flex;
+    justify-content: center;
+   gap: 10px;
+}

@@ -1,0 +1,75 @@
+/* General dashboard container styling */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    width: 100%; /* Ensure the dashboard takes full width of the page */
+  }
+
+
+  .dashboard-container h1{
+
+  }
+  .row1{
+display: flex;
+flex-direction: row;
+gap: 20px;
+margin: 10px;
+  }
+  .row2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 10px;
+  }
+  /* Widget container with grid layout */
+  .dashboard-grid {
+    
+  }
+  
+  /* Style for the widgets */
+  .widgets {
+    width: 100%; /* Use full width of the grid cell */
+    max-width: 320px; /* Maximum width for the widgets */
+    height: 320px; /* Fixed height */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the wider widget (enrollments bar chart) */
+  .widget-enrollment {
+    
+    width: 680px; /* Maximum width for the enrollment widget */
+    height: 320px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust grid for smaller screens */
+  @media (max-width: 1200px) {
+    .dashboard-grid {
+      grid-template-columns: repeat(2, 1fr); /* Change to 2 columns on smaller screens */
+      grid-gap: 10px;
+    }
+  
+    .widget-enrollment {
+      grid-column: span 2; /* Make the enrollment chart span 2 columns */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      grid-gap: 10px;
+    }
+  
+    .widget-enrollment {
+      grid-column: span 1; /* Make the enrollment chart take full width */
+    }
+  }
+  

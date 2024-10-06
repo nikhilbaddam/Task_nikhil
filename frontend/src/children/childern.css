@@ -1,0 +1,65 @@
+/* Container styles */
+.overview-container {
+    text-align: center;
+    width: 100%;
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #3333330a;
+  }
+  .overview-container p{
+   
+   border-bottom: 1px solid gray;
+   padding-bottom: 5px;
+   font-weight: 900;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+
+   
+    
+  }
+  
+  /* Chart container styles */
+  .chart-container {
+    position: relative;
+    display: inline-block;
+  }
+  .chart{
+    height: 100px;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+   
+    
+  }
+  
+  /* Total number styles (inside donut) */
+  
+  
+  /* Counts container styles */
+  .counts-container {
+    
+    border-top: 1px solid gray;
+    transform: translate(0px,-60px);
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .parts{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    color: #ada9a9;
+    
+  }
+  .parts p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    border: none;
+  }
+  #part1{
+    color: aqua;
+  }

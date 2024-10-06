@@ -7,7 +7,7 @@ const AttendanceOverview = () => {
   useEffect(() => {
     const fetchAttendance = async () => {
       try {
-        const response = await fetch('http://localhost:5000/attendence/getattend');
+        const response = await fetch('https://task-nikhil.onrender.com/attendence/getattend');
         const data = await response.json();
         setAttendanceData(data);
       } catch (error) {

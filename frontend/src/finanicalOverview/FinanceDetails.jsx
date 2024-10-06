@@ -8,7 +8,7 @@ const FinanceDetails = () => {
   useEffect(() => {
     const fetchChildrenData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/children/childview');
+        const response = await fetch('https://task-nikhil.onrender.com/children/childview');
         const data = await response.json();
         setChildrenData(data);
       } catch (error) {
@@ -18,7 +18,7 @@ const FinanceDetails = () => {
 
     const fetchCaregiverData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/caregiver/caregiverOverview');
+        const response = await fetch('https://task-nikhil.onrender.com/caregiver/caregiverOverview');
         const data = await response.json();
         setCaregiverData(data);
       } catch (error) {

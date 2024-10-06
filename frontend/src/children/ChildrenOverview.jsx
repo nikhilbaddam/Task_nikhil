@@ -8,7 +8,7 @@ const ChildrenOverview = () => {
   useEffect(() => {
     const fetchOverview = async () => {
       try {
-        const response = await fetch('http://localhost:5000/children/childview');
+        const response = await fetch('https://task-nikhil.onrender.com/children/childview');
         const data = await response.json();
         setOverviewData(data);
       } catch (error) {
